@@ -13,3 +13,13 @@ ActionMailer::Base.smtp_settings = {
  :domain         => 'heroku.com',
  :enable_startstls_auto => true
 }
+ActionMailer::Base.default_url_options = { host: 'sleepy-depths-28016.herokuapp.com' }
+
+# ActionMailer::Base.smtp_settings = {
+#   :address              => "smtp.sendgrid.net",
+#   :domain               => DOMAIN,
+#   :user_name            => ENV['SENDGRID_USERNAME'],
+#   :password             => ENV['SENDGRID_PASSWORD'],
+#   :authentication       => "plain",
+#   :enable_starttls_auto => true
+# }
