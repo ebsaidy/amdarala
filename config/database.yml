@@ -13,6 +13,7 @@
 #   <<: *default
 #   database: db/development.sqlite3
 development:
+  adapter: postgresql
   database: db/development.sqlite3
 
 production:
